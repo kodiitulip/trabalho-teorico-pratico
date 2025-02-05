@@ -4,7 +4,9 @@ const CACHE_ASSETS = [
     '/index.html',
     '/style.css',
     '/script.js',
-    '/manifest.json'
+    '/manifest.json',
+    '/icon-192x192.png',
+    '/icon-512x512.png'
 ];
 
 self.addEventListener('install', function(event) {
