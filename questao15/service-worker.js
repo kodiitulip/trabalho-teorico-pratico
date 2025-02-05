@@ -1,12 +1,12 @@
 const CACHE_NAME = 'v1';
 const CACHE_ASSETS = [
-    '/',
-    '/index.html',
-    '/style.css',
-    '/script.js',
-    '/manifest.json',
-    '/icon-192x192.png',
-    '/icon-512x512.png'
+    './',
+    './index.html',
+    './style.css',
+    './script.js',
+    './manifest.json',
+    './icon-128x128.png',
+    './icon-512x512.png'
 ];
 
 self.addEventListener('install', function(event) {
