@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armazenamento no Navegador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Armazenamento no Navegador</h1>
+
+    <div class="container">
+        <!-- localStorage -->
+        <section>
+            <h2>localStorage</h2>
+            <input type="text" id="localInput" placeholder="Digite um valor">
+            <button id="localSave">Salvar</button>
+            <button id="localLoad">Carregar</button>
+            <p id="localOutput"></p>
+        </section>
+
+        <!-- sessionStorage -->
+        <section>
+            <h2>sessionStorage</h2>
+            <input type="text" id="sessionInput" placeholder="Digite um valor">
+            <button id="sessionSave">Salvar</button>
+            <button id="sessionLoad">Carregar</button>
+            <p id="sessionOutput"></p>
+        </section>
+
+        <!-- IndexedDB -->
+        <section>
+            <h2>IndexedDB</h2>
+            <input type="text" id="dbInput" placeholder="Digite um valor">
+            <button id="dbSave">Salvar</button>
+            <button id="dbLoad">Carregar</button>
+            <p id="dbOutput"></p>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
