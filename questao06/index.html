@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Caixa de Alerta</title>
+    <style>
+      main {
+        height: 100dvh;
+        align-content: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <button
+        id="alert-btn"
+        onclick="showAlert()">
+        Clique aqui!
+      </button>
+    </main>
+    <script>
+      const showAlert = () => {
+        alert('Você foi alertado.');
+      };
+    </script>
+  </body>
+</html>
