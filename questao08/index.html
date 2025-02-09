@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Really Shitty Single Page App</title>
+    <style>
+      #container,
+      main {
+        height: 100dvh;
+        align-content: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & > * {
+          display: block;
+        }
+      }
+
+      .fake-link {
+        display: block;
+        color: blue;
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">aguarde</div>
+    <script
+      src="./script.js"
+      type="module"></script>
+  </body>
+</html>
