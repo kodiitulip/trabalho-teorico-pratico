@@ -59,6 +59,23 @@
 
 ---
 
+### **Questão 09: SinglePageApp HistoryAPI**
+
+**Objetivo:** Utilizar HistoryAPI para uma aplicação estilo SPA.
+
+#### Explicação:
+
+- O código utiliza a HistoryAPI para alterar a url do usuário sem ocorrer recaregamento de página.
+- A função `pushState` permite enviar um novo caminho para url sem recaregar a página
+- O evento `popstate` permite detectar quando ocorreu um `pushState` ou `replaceState`, permitindo rodar códigos apos alguma mudança na url
+- O código utiliza uma função customizada `router()` para detectar qual a url que o usuário está e renderizar a página requisitada.
+
+#### Código:
+
+- [Ver código no GitHub](https://github.com/kodiitulip/spa-vanilla-javascript)
+
+---
+
 ### **Questão 11: Exibição dinâmica de data e hora**
 
 **Objetivo:** Criar uma página que exiba a data e hora atuais e as atualize dinamicamente a cada segundo.
@@ -166,4 +183,3 @@ Agradecemos pela oportunidade de aprimorar nossos conhecimentos em Autoração M
 ---
 
 **2025, Equipe KJC ©**
-
