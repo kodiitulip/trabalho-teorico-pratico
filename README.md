@@ -14,15 +14,62 @@
 
 ---
 
+### **Questão 06: Alert Box**
+
+**Objetivo:** Criar um botão que exibe um alertbox quando clicado.
+
+#### Explicação:
+
+- O código utiliza a função `alert()` para mostrar a alert box.
+- A função `addEventListener()` permite adicionar uma função ao event de click do botão.
+
+#### Código:
+
+- [Ver código no GitHub](./questao06/)
+
+---
+
+### **Questão 07: Validação de formulários**
+
+**Objetivo:** Validar os valores de um formulário antes de enviar os dados.
+
+#### Explicação:
+
+- O código utiliza a função `addEventListener()` para adicionar funções aos eventos de input.
+- A função `setCustomValidity()` permite adicionar uma mensage de validação customizada a um elemento input, o que faria o input se tornar inválido.
+
+#### Código:
+
+- [Ver código no GitHub](./questao07/)
+
+---
+
+### **Questão 08: SinglePageApp com innerHTML**
+
+**Objetivo:** Criar uma "aplicação" de página única modificando o `innerHTML` de um container.
+
+#### Explicação:
+
+- O código utiliza a funções customizadas que retornam uma string com a página a ser renderizada, e uma função `init()` que faria as Considerações necessárias para aquela página.
+- O código principal modificaria o `innerHTML` de um container com as strings retornadas das funções customizadas.
+
+#### Código:
+
+- [Ver código no GitHub](./questao08/)
+
+---
+
 ### **Questão 11: Exibição dinâmica de data e hora**
 
 **Objetivo:** Criar uma página que exiba a data e hora atuais e as atualize dinamicamente a cada segundo.
 
 #### Explicação:
+
 - O código utiliza a função `setInterval` para atualizar a data e hora a cada segundo.
 - A função `new Date()` captura a data e hora atuais, e `toLocaleString()` formata o valor para o padrão local.
 
 #### Código:
+
 - [Ver código no GitHub](https://github.com/kodiitulip/trabalho-teorico-pratico/tree/main/questao11)
 
 ---
@@ -32,10 +79,12 @@
 **Objetivo:** Criar um menu dropdown que funcione tanto em dispositivos com mouse quanto em dispositivos touch, aplicando estilos diferentes para cada tipo de interação.
 
 #### Explicação:
+
 - O menu dropdown usa eventos de `mouseover`, `mouseout` e `touchstart` para alternar entre as classes CSS `.hover` e `.active`.
 - O CSS controla a exibição do conteúdo do dropdown com `display: none` e `display: block`.
 
 #### Código:
+
 - [Ver código no GitHub](https://github.com/kodiitulip/trabalho-teorico-pratico/tree/main/questao12)
 
 ---
@@ -45,11 +94,13 @@
 **Objetivo:** Consumir uma API externa, tratar a resposta e exibir os dados na página, lidando com possíveis erros.
 
 #### Explicação:
+
 - A função `fetch` faz uma requisição à API e trata a resposta com `.then` e `.catch`.
 - Em caso de sucesso, os dados são exibidos no elemento `#conteudo`.
 - Em caso de erro, uma mensagem de erro é exibida.
 
 #### Código:
+
 - [Ver código no GitHub](https://github.com/kodiitulip/trabalho-teorico-pratico/tree/main/questao13)
 
 ---
@@ -59,11 +110,13 @@
 **Objetivo:** Demonstrar o uso de `localStorage`, `sessionStorage` e `IndexedDB` em uma aplicação simples que armazena e recupera dados.
 
 #### Explicação:
+
 - **localStorage:** Armazena dados de forma persistente (até serem explicitamente removidos).
 - **sessionStorage:** Armazena dados apenas durante a sessão do navegador.
 - **IndexedDB:** Armazena grandes volumes de dados de forma estruturada (tipo banco de dados NoSQL).
 
 #### Código:
+
 - [Ver código no GitHub](https://github.com/kodiitulip/trabalho-teorico-pratico/tree/main/questao14)
 
 ---
@@ -73,11 +126,13 @@
 **Objetivo:** Configurar um Service Worker para cachear arquivos e fornecer uma experiência offline, além de criar um manifesto PWA.
 
 #### Explicação:
+
 - O Service Worker cacheia arquivos estáticos durante a instalação e os serve quando o usuário está offline.
 - O manifesto PWA permite que o aplicativo seja instalado no dispositivo do usuário.
 - O CSS e o JavaScript são usados para estilizar e registrar o Service Worker, respectivamente.
 
 #### Código:
+
 - [Ver código no GitHub](https://github.com/kodiitulip/trabalho-teorico-pratico/tree/main/questao15)
 
 ---
@@ -111,3 +166,4 @@ Agradecemos pela oportunidade de aprimorar nossos conhecimentos em Autoração M
 ---
 
 **2025, Equipe KJC ©**
+
