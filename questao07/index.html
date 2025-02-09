@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Caixa de Alerta</title>
+    <style>
+      main {
+        height: 100dvh;
+        align-content: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      form {
+        & > * {
+          display: block;
+          width: 100%;
+          margin: 0.5rem auto;
+        }
+
+        .validity {
+          color: red;
+        }
+
+        input:invalid,
+        textarea:invalid {
+          color: red;
+          border-color: red;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <form>
+        <h2>Formulário de Feedback</h2>
+        <label for="name">Nome*: </label>
+        <input
+          required
+          type="text"
+          name="name"
+          id="name" />
+        <span class="validity"></span>
+        <label for="email">Email*: </label>
+        <input
+          required
+          type="email"
+          name="email"
+          id="email" />
+        <span class="validity"></span>
+        <label for="msg">Mensagem*: </label>
+        <textarea
+          required
+          name="msg"
+          id="msg"></textarea>
+        <span class="validity"></span>
+        <button
+          type="submit"
+          id="submit">
+          enviar
+        </button>
+        <span>Itens com * são obrigatórios</span>
+      </form>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
