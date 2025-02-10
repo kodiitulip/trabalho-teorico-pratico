@@ -1,8 +1,6 @@
 # Atividades Autoração Multimídia II
 
-## **1. Questão 1**
-
-### **Explicação:**
+## **Questão 1**
 
 A organização semântica do documento HTML5 traz benefícios significativos tanto para o desenvolvimento quanto para a experiência do usuário. Em primeiro lugar, o uso de tags como `<header>`, `<main>`, `<section>` e `<footer>` cria uma hierarquia clara que facilita a interpretação do conteúdo por navegadores e ferramentas de acessibilidade, melhorando a navegação para usuários com leitores de tela. Essa mesma estruturação semântica favorece a otimização para mecanismos de busca (SEO), pois os robôs de indexação identificam com mais precisão a relevância e organização do conteúdo.
 
@@ -53,7 +51,7 @@ Além disso, a separação lógica em blocos funcionais - com o cabeçalho dedic
 
 ### **Código HTML:**
 
-```jsx
+```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -80,7 +78,7 @@ Além disso, a separação lógica em blocos funcionais - com o cabeçalho dedic
 </html>
 ```
 
-## **2. Questão 2**
+## **Questão 2**
 
 Na estruturação semântica do HTML, optamos por utilizar elementos `<section>` para cada bloco de conteúdo temático, garantindo uma organização clara e significativa do documento. Cada seção é identificada com cabeçalhos `<h2>`, mantendo uma hierarquia coerente de títulos (onde o `<h1>` principal precede os `<h2>`) e agrupando conteúdos relacionados de maneira lógica. Essa abordagem não só melhora a acessibilidade como também facilita a interpretação do conteúdo por mecanismos de busca.
 
@@ -90,7 +88,9 @@ As vantagens desse método incluem a preservação da semântica documental atra
 
 Entre as boas práticas adotadas, destacamos a preferência por classes em vez de IDs para estilização, garantindo maior reutilização de código. A separação entre estilos estruturais base e características visuais específicas promove um código mais organizado, enquanto o uso de unidades relativas (em) assegura melhor adaptação a diferentes dispositivos. As cores foram selecionadas priorizando a legibilidade e contraste adequado, seguindo diretrizes de acessibilidade web, e a estrutura CSS foi planejada para permitir sobreposição controlada de estilos quando necessário.
 
-```jsx
+### **Código HTML:**
+
+```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -131,7 +131,9 @@ Entre as boas práticas adotadas, destacamos a preferência por classes em vez d
 </html>
 ```
 
-```jsx
+### **Código CSS:**
+
+```css
 section {
     margin: 20px;
     padding: 15px;
@@ -169,11 +171,13 @@ a {
 }
 ```
 
-## **3. Questão 3
+## **Questão 3**
 
-1. Adicionar `padding-top` ao conteúdo principal**
+**1. Adicionar `padding-top` ao conteúdo principal**
 
-```jsx
+### **Código HTML:**
+
+```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -214,7 +218,9 @@ a {
 </html>
 ```
 
-```jsx
+### **Código CSS:**
+
+```css
 header {
   position: fixed;
   top: 0;
@@ -286,8 +292,10 @@ a {
 
 **2 - Usando elemento spacer**
 
-```jsx
-**<!DOCTYPE html>
+### **Código HTML:**
+
+```html
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
@@ -329,7 +337,9 @@ a {
 </html>**
 ```
 
-```jsx
+### **Código CSS:**
+
+```css
 header {
   position: fixed;
   top: 0;
@@ -399,14 +409,15 @@ a {
 - **Elemento não semântico:** Adiciona um elemento HTML apenas para ajuste visual.
 - **Manutenção:** Requer sincronização manual entre a altura do header e do spacer.
 
-## **4. Questão 4**
+## **Questão 4**
 
 **Exemplo de CSS Mobile First:**
 
 Nesta abordagem, iniciamos com estilos para dispositivos móveis e usamos `min-width` em media queries para adaptar o layout a telas maiores.
-****
 
-```jsx
+### **Código CSS:**
+
+```css
 section {
   margin: 20px;
   padding: 15px;
@@ -487,7 +498,62 @@ a {
 }
 ```
 
-```jsx
+### **Código HTML:**
+
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questões de Autoração Multimídia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Questões de Autoria Multimídia</h1>
+    </header>
+
+    <main>
+        <section class="destaque">
+            <h2>Introdução</h2>
+            <p>Bem-vindo à página do grupo KJC...</p>
+            <a href="https://github.com/kodiitulip/trabalho-teorico-pratico/tree/main" target="_blank">Repositório no GitHub</a>
+        </section>
+
+        <section class="aviso">
+            <h2>Importante</h2>
+            <p>Datas de entrega: 09/02/2025</p>
+            <p>Formato: Arquivo do tipo Markdown no GitHub.</p>
+        </section>
+
+        <section class="info">
+            <h2>Detalhes Técnicos</h2>
+            <p>Tecnologias utilizadas: HTML5, CSS3</p>
+            <p>Responsividade obrigatória</p>
+        </section>
+    </main>
+
+    <footer>
+        Grupo KJC - 2025
+    </footer>
+</body>
+</html>
+```
+
+Lógica:
+
+- Mobile (base): As seções são exibidas em uma coluna (`display: block`).
+- Tablets (768px+): O layout vira um grid de 2 colunas.
+- Desktop (1024px+): O grid expande para 3 colunas.
+
+**Abordagem Desktop First**
+
+Aqui, iniciamos com estilos para desktop e usamos `max-width` em media queries para ajustar o layout a telas menores.
+
+### **Código HTML:**
+
+```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -530,17 +596,9 @@ a {
 </html>
 ```
 
-Lógica:
+### **Código CSS:**
 
-- Mobile (base): As seções são exibidas em uma coluna (`display: block`).
-- Tablets (768px+): O layout vira um grid de 2 colunas.
-- Desktop (1024px+): O grid expande para 3 colunas.
-
-**Abordagem Desktop First**
-
-Aqui, iniciamos com estilos para desktop e usamos `max-width` em media queries para ajustar o layout a telas menores.
-
-```jsx
+```css
 main {
   display: grid;
   grid-template-columns: repeat(3, 1fr); 
@@ -633,9 +691,11 @@ Lógica:
 - Tablets (1024px-): Grid reduz para 2 colunas.
 - Mobile (768px-): Layout volta para coluna única (`display: block`).
 
-## **5. Questão 5**
+## **Questão 5**
 
-```jsx
+### **Código HTML:**
+
+```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
